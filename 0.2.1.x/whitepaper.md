@@ -128,12 +128,12 @@ As the example above shows, schema.org provides a list of RDF classes and proper
 
 ## Implementation
 
-## Writing the schema
+### Writing the schema
 Here comes the most challenging part: both class and property descriptions in RDF are too complex for end users to be expected to understand. Furthermore, RO-Crate imposes additional restrictions, like it's object graph should be a list of objects without nesting what makes definitions hardly human readable. These challenges make the use of extra tools unavoidable.
 
 Ideally, users should rely on platforms that can import and export RO-Crate Schema Plus packages implementing this structure. Although the complexity shifts to system integrators, software libraries that provide an abstraction layer while hiding the underlying RDF details can greatly support adoption.
 
-## Interpreting the schema
+### Interpreting the schema
 Consider two systems attempting to integrate with each other, each correctly embedding a schema within their RO-Crate Schema Plus metadata files. With different systems now able to exchange schemas dynamically, disparities between schemas may arise that other systems may or may not be able to interpret. Ultimately, each system has its own internal data model, which is translated more or less directly into what is shared.
 
 When different schemas share similar information, a currently acceptable way to handle this is by defining semantic ontology equivalences:
