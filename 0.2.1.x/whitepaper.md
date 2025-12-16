@@ -1,7 +1,7 @@
 # RO-Crate Schema Plus - Origins, Specification, Implementation and Considerations
 
-Juan Fuentes - Principal Software Developer, Scientific IT Services, ETHZ
-Andreas Meier - Principal Software Developer, Scientific IT Services, ETHZ
+Juan Fuentes - Principal Software Developer (Scientific IT Services, ETHZ)
+Andreas Meier - Software Developer (Scientific IT Services, ETHZ)
 
 This document guides the reader through the complete thought process done to reach the current RO-Crate Schema Plus specification.
 This is done to explain its inner workings to less knowledgeable readers while also allowing more knowledgeable ones to provide feedback.
