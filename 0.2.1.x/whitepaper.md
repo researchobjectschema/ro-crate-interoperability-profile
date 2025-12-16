@@ -170,6 +170,8 @@ Our current interpretation of the RO-Crate standard is that it already establish
 
 To attach data to an object in the graph, such an object class should inherit from or intersect with those classes.
 
+## References
+
 ## Acknowledgments
 
 RO-Crate Schema Plus specification: Andreas Meier (SIS, ETHZ), Juan Fuentes (SIS, ETHZ)
