@@ -27,9 +27,7 @@ AKA: Convention to include schemas and metadata inside `ro-crate-metadata.json`
 ### 0.2.1
 
 - Schema format specification and client API specification split to separate documents
-- Revised texts
-- Revised examples
-- FAQ
+- Accompanying [whitepaper](./whitepaper.md)
 
 ### 0.2.0, compatible with RO-Crate 1.1
 
