@@ -1,4 +1,4 @@
-# RO-Crate Schema Plus - Origins, Specification, Implementation and Considerations
+# RO-Crate Schema Plus: Origins, Specification, Implementation and Considerations
 Juan Fuentes - Principal Software Developer (Scientific IT Services, ETHZ)
 
 Andreas Meier - Software Developer (Scientific IT Services, ETHZ)
