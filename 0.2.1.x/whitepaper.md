@@ -1,15 +1,15 @@
 # RO-Crate Schema Plus: Origins, Specification, Implementation and Considerations
-Juan Fuentes - Principal Software Developer (Scientific IT Services, ETHZ)
+Juan Fuentes - Principal Software Developer (Scientific IT Services, ETH Zurich)
 
-Andreas Meier - Software Developer (Scientific IT Services, ETHZ)
+Andreas Meier - Software Developer (Scientific IT Services, ETH Zurich)
 
 This document guides the reader through the complete thought process done to reach the current RO-Crate Schema Plus specification.
 This is done to explain its inner workings to less knowledgeable readers while also allowing more knowledgeable ones to provide feedback.
 
 ## Origins
-[RO-Crate Schema Plus](http://researchobjectschema.org/), is born from the simple idea of bundling not only files and metadata related to those files, something RO-Crate already does, but also the schema definition of such metadata.
+[RO-Crate Schema Plus](http://researchobjectschema.org/), is an extension of RO-Crate, which allows to bundle together, in addition to data files and related metadata, also the metadata schema definition. 
 
-At the end of 2024, representatives of Scientific Information Services at ETHZ, along with representatives from other ETHZ institutes such as PSI and EMPA, contacted the RO-Crate community because they wanted to use RO-Crate to exchange data and metadata together without the need for custom profiles.
+At the end of 2024, representatives of Scientific IT Services (SIS) at ETH Zurich, along with representatives from other institutions of the ETH Domain, namely PSI and EMPA, got in contact with the RO-Crate community because they wanted to use RO-Crate to exchange data and metadata together without the need of custom profiles.
 
 ### Why is this necessary?
 This is not a new idea. Readers may be familiar with formats like CSV. When opening a CSV file, users not only need to guess what the content separators are, but also what the data types of the columns are, and, if several CSV files are present, how they are connected to each other. To **stop guessing** [CSVW](https://csvw.org/) was created, providing a secondary file that answers those questions.
@@ -17,13 +17,11 @@ This is not a new idea. Readers may be familiar with formats like CSV. When open
 The main goal of RO-Crate Schema Plus is to provide the same kind of additional information within the ro-crate-metadata.json file.
 
 ### JSON-LD limitations
-RO-Crate provides a file, **ro-crate-metadata.json**, written using JSON-LD. By default, it uses [schema.org]([http://schema.org) types, along with some types added by RO-Crate itself.
+RO-Crate provides a file, **ro-crate-metadata.json**, in JSON-LD format. By default, this uses [schema.org]([http://schema.org) types, along with some types added by RO-Crate itself.
 
-RO-Crate uses JSON-LD to represent its metadata and, as a result, also shares its limitations. JSON-LD uses a context to provides **semantics**, can describe you what things are, but it does not define their schema fields, data types, relationships, and so on. In other words **semantics do not substitute schema**.
+RO-Crate uses JSON-LD to represent its metadata and, as a result, also shares its limitations. JSON-LD uses a context to provide **semantics**, it can describe what things are, but it does not define their schema fields, data types, relationships, and so on. In other words, **semantics do not substitute schema**.
 
-RO-Crate provides a file, ro-crate-metadata.json, written using JSON-LD. By default, it uses schema.org types, along with some types added by RO-Crate itself.
-
-This shortcomings are best illustrated with an example.
+These shortcomings are best illustrated with an example.
 
 *Example from [RO-Crate Specification](https://www.researchobject.org/ro-crate/specification/1.1/data-entities#example-linking-to-a-file-and-folders):*
 
@@ -78,7 +76,7 @@ This could be considered a strength, as it makes the format highly extensible. H
 ## Specification
 How can the limitations of JSON-LD and profiles be addressed? In other words, how could a schema or profile be specified within RO-Crate?
 
-Since RO-Crate provides a single file, **ro-crate-metadata.json**, written using JSON-LD, any such schema or profile would need to be provided within that file and expressed using JSON-LD.
+Since RO-Crate provides a single JSON-LD file, **ro-crate-metadata.json**, any such schema or profile would need to be provided within that file and expressed using JSON-LD.
 
 Looking at how schema.org distributes its schema, we find that it [downloads](https://schema.org/docs/developers.html) in a variety of formats, including a [JSON-LD download](https://schema.org/version/latest/schemaorg-current-https.jsonld). How is this possible? Because schema.org specifies its schema in RDF, which can be serialized in different formats, including JSON-LD.
 
@@ -124,12 +122,12 @@ How does this look in practice?
 }
 ```
 
-As the example above shows, schema.org provides a list of RDF classes and properties formatted as JSON-LD. This content could easily fit into the RO-Crate object graph inside ro-crate-metadata.json without requiring any changes to the current RO-Crate standard, making it backwards compatible.
+As the example above shows, schema.org provides a list of RDF classes and properties formatted as JSON-LD. This content could easily fit into the RO-Crate object graph, inside the ro-crate-metadata.json file without requiring any changes to the current RO-Crate standard, making it backwards compatible.
 
 ## Implementation
 
 ### Writing the schema
-Here comes the most challenging part: both class and property descriptions in RDF are too complex for end users to be expected to understand. Furthermore, RO-Crate imposes additional restrictions, like it's object graph should be a list of objects without nesting what makes definitions hardly human readable. These challenges make the use of extra tools unavoidable.
+Here comes the most challenging part: both class and property descriptions in RDF are too complex for end users to understand. Furthermore, RO-Crate imposes additional restrictions, such as that its object graph should be a list of objects without nesting, that makes definitions hardly human readable. These challenges make the use of extra tools unavoidable.
 
 Ideally, users should rely on platforms that can import and export RO-Crate Schema Plus packages implementing this structure. Although the complexity shifts to system integrators, software libraries that provide an abstraction layer while hiding the underlying RDF details can greatly support adoption.
 
@@ -146,7 +144,7 @@ In an ideal scenario, where a RO-Crate Schema Plus package includes the schema, 
 
 Finding these equivalences can become a point of contention during system integration, especially when there is no well-established ontology.
 
-Since there does not appear to be a well-established framework for making such decisions, these choices often end up being more political than technical.
+Since there does not appear to be a well-established framework for making such decisions, these often end up being shaped more by institutional interests than by technical considerations.
 
 ## Considerations
 
@@ -172,9 +170,9 @@ To attach data to an object in the graph, such an object class should inherit fr
 
 ## Acknowledgments
 
-RO-Crate Schema Plus specification: Andreas Meier (SIS, ETHZ), Juan Fuentes (SIS, ETHZ)
+RO-Crate Schema Plus specification: Andreas Meier (ETH Zurich), Juan Fuentes (ETH Zurich)
 
-RO-Crate Schema Plus Reference Java library: Andreas Meier (SIS, ETHZ)
+RO-Crate Schema Plus Reference Java library: Andreas Meier (ETH Zurich)
 
 RO-Crate Schema Plus Python Library:  Pascal Su (EMPA), Simone Baffelli (EMPA)
 
