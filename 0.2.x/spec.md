@@ -137,7 +137,7 @@ Based on RDFS classes, these can be used as object and subjects of triples.
 | @id                 | MUST      | ID of the entry                                                                                                                                   |
 | @type               | MUST      | Is `rdfs:Class`                                                                                                                                   |
 | owl:equivalentClass | MAY       | Ontological annotation  https://www.w3.org/TR/owl-ref/#equivalentClass-def                                                                        |
-| rdfs:subClassOf     | MUST      | Used to indicate inheritance. Each entry has to inherit from something, this can be a base type.  https://www.w3.org/TR/rdf-schema/#ch_subclassof |
+| rdfs:subClassOf     | MAY      | Used to indicate inheritance. Each entry has to inherit from something, this can be a base type.  https://www.w3.org/TR/rdf-schema/#ch_subclassof |
 | rdfs:label          | MAY       | Label of the class                                                                                                                                |
 | rdfs:comment        | MAY       | Human-readable description of this class                                                                                                          |
 | owl:restriction     | MAY       | OWL restriction, a list of OWL restrictions, see [OWl Restriction](#owl-restriction)                                                              |
