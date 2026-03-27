@@ -2,11 +2,6 @@ import tempfile
 import json
 from pathlib import Path
 from lib_ro_crate_schema.crate.rdf import BASE
-# Inline the context needed for OWL cardinality constraints
-RO_EXTRA_CTX = {
-    "owl:maxCardinality": {"@type": "xsd:integer"},
-    "owl:minCardinality": {"@type": "xsd:integer"},
-}
 from lib_ro_crate_schema.crate.schema_facade import SchemaFacade
 import pyld
 from rocrate.rocrate import ROCrate
@@ -146,7 +141,6 @@ def add_schema_to_crate(schema: SchemaFacade, crate: ROCrate) -> ROCrate:
     serialization_context = {
         "schema": "https://schema.org/",
         **additional_context,
-        **RO_EXTRA_CTX
     }
     
     try:
@@ -157,7 +151,7 @@ def add_schema_to_crate(schema: SchemaFacade, crate: ROCrate) -> ROCrate:
     except Exception as e:
         print(f"Warning: Could not serialize with dynamic context, falling back to basic context: {e}")
         # Fallback to basic context
-        basic_context = {"schema": "https://schema.org/", **RO_EXTRA_CTX}
+        basic_context = {"schema": "https://schema.org/"}
         ld_ser = metadata_graph.serialize(format="json-ld", context=basic_context)
         ld_obj = pyld.jsonld.json.loads(ld_ser)
     
