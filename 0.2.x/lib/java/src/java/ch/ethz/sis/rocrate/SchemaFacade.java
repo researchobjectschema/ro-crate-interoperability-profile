@@ -20,7 +20,7 @@ public class SchemaFacade implements ISchemaFacade
 
     private final static String RDFS_CLASS = "rdfs:Class";
 
-    private final static String RDFS_PROPERTY = "rdfs:Property";
+    private final static String RDF_PROPERTY = "rdf:Property";
 
     public static final String EQUIVALENT_CLASS = "owl:equivalentClass";
 
@@ -153,7 +153,7 @@ public class SchemaFacade implements ISchemaFacade
         DataEntity.DataEntityBuilder builder = new DataEntity.DataEntityBuilder();
 
         builder.setId(rdfsProperty.getId());
-        builder.addProperty("@type", RDFS_PROPERTY);
+        builder.addProperty("@type", RDF_PROPERTY);
         builder.addProperty(RDFS_LABEL, rdfsProperty.getLabel());
         builder.addProperty(RDFS_COMMENT, rdfsProperty.getComment());
 
@@ -321,43 +321,40 @@ public class SchemaFacade implements ISchemaFacade
                     entity.getProperty("@id")
                             .asText();
 
-            switch (type)
-            {
-                case "rdfs:Property" ->
-                {
-                    PropertyType rdfsProperty = new PropertyType();
-                    rdfsProperty.setId(resolvePrefixSingleValue(id));
+        if (type.equals(RDF_PROPERTY) || type.equals("rdfs:Property"))
+        {
+                PropertyType rdfsProperty = new PropertyType();
+                rdfsProperty.setId(resolvePrefixSingleValue(id));
 
-                    rdfsProperty.setOntologicalAnnotations(
-                            parseMultiValued(entity, EQUIVALENT_CONCEPT));
+                rdfsProperty.setOntologicalAnnotations(
+                        parseMultiValued(entity, EQUIVALENT_CONCEPT));
 
-                    List<String> rawRange = parseMultiValued(entity, rangeIdentifier);
+                List<String> rawRange = parseMultiValued(entity, rangeIdentifier);
 
-                    List<IDataType> dataTypes = rawRange.stream()
-                            .filter(LiteralType::isLiteralType)
-                            .map(LiteralType::getByTypeName)
-                            .filter(Objects::nonNull)
-                            .collect(Collectors.toList());
-                    List<IType> types = rawRange.stream()
-                            .filter(x -> !LiteralType.isLiteralType(x))
-                            .map(this::resolvePrefixSingleValue)
-                            .map(classes::get)
-                            .collect(Collectors.toList());
+                List<IDataType> dataTypes = rawRange.stream()
+                        .filter(LiteralType::isLiteralType)
+                        .map(LiteralType::getByTypeName)
+                        .filter(Objects::nonNull)
+                        .collect(Collectors.toList());
+                List<IType> types = rawRange.stream()
+                        .filter(x -> !LiteralType.isLiteralType(x))
+                        .map(this::resolvePrefixSingleValue)
+                        .map(classes::get)
+                        .collect(Collectors.toList());
 
-                    dataTypes.stream().forEach(rdfsProperty::addDataType);
-                    types.forEach(rdfsProperty::addType);
+                dataTypes.stream().forEach(rdfsProperty::addDataType);
+                types.forEach(rdfsProperty::addType);
 
-                    rdfsProperty.setDomainIncludes(
-                            parseMultiValued(entity, domainIdentifier).stream()
-                                    .map(x -> resolvePrefixSingleValue(x))
-                                    .map(classes::get).collect(
-                                            Collectors.toList()));
-                    properties.put(resolvePrefixSingleValue(id), rdfsProperty);
+                rdfsProperty.setDomainIncludes(
+                        parseMultiValued(entity, domainIdentifier).stream()
+                                .map(x -> resolvePrefixSingleValue(x))
+                                .map(classes::get).collect(
+                                        Collectors.toList()));
+                properties.put(resolvePrefixSingleValue(id), rdfsProperty);
 
-                }
             }
-
         }
+
 
         for (DataEntity entity : crate.getAllDataEntities())
         {

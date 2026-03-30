@@ -165,7 +165,7 @@ They also specify, which classes they can interact with.
 | Type/Property          | Required? | Description                                                                                             |
 |------------------------|-----------|---------------------------------------------------------------------------------------------------------|
 | @id                    | MUST      | ID of the entry                                                                                         |
-| @type                  | MUST      | Is `rdfs:Property`                                                                                      |
+| @type                  | MUST      | Is `rdf:Property`                                                                                      |
 | owl:equivalentProperty | MAY       | Ontological annotation  https://www.w3.org/TR/owl-ref/#equivalentClass-def                              |
 | schema:domainIncludes  | MUST      | Describes the possible types of the subject. This can be one or many.                                   |
 | schema:rangeIncludes   | MUST      | Describes the possible types of the object. This can be one or many.                                    |
