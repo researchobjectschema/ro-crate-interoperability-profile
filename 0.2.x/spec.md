@@ -34,6 +34,13 @@ AKA: Convention to include schemas and metadata inside `ro-crate-metadata.json`
 
 # Changelog
 
+
+### 0.2.1, fix typo
+
+#### What's new?
+
+- Fix typo `rdfs:property` should be `rdf:Property` [RDFS Property](#rdfs-class)
+
 ### 0.2.0, compatible with RO-Crate 1.1
 
 #### What's new?
