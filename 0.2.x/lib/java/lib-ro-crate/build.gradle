@@ -1,0 +1,56 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+
+tasks.register('buildDistribution', Jar) {
+    zip64 = true
+    dependsOn tasks.build
+    duplicatesStrategy 'include'
+
+    archiveBaseName.set('lib-ro-crate-distribution')
+    includeEmptyDirs = false
+
+
+    from(zipTree(tasks.jar.outputs.files.singleFile)) {
+        include '**/*'
+    }
+
+    from(configurations.runtimeClasspath.collect { zipTree(it) }) {
+        include '**/*'
+        exclude 'META-INF/*.SF', 'META-INF/*.DSA', 'META-INF/*.RSA'
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs << '-parameters'
+}
+
+repositories {
+    ivy {
+        ivyPattern "https://sissource.ethz.ch/openbis/openbis-public/openbis-ivy/-/raw/main/[organisation]/[module]/[revision]/ivy.xml"
+        artifactPattern "https://sissource.ethz.ch/openbis/openbis-public/openbis-ivy/-/raw/main/[organisation]/[module]/[revision]/[artifact]-[revision](-[classifier]).[ext]"
+    }
+//    mavenCentral()
+}
+
+
+dependencies {
+                    // Ro-crate library
+    implementation 'edu.kit.datamanager:ro-crate-java:2.0.1',
+                    'com.fasterxml.jackson.core:jackson-core:2.18.3',
+                    'com.fasterxml.jackson.core:jackson-databind:2.18.3',
+                    'com.networknt:json-schema-validator:1.5.7',
+                    'net.lingala.zip4j:zip4j:2.11.5',
+            'org.apache.httpcomponents:httpclient:4.5.14',
+            // Apache Jena
+                    'org.apache.jena:apache-jena-libs:5.0.0'
+
+    testImplementation 'junit:junit:4.10'
+}
