@@ -17,12 +17,12 @@ ex:TypeMustBeClassShape
   sh:property [
     sh:path rdf:type ;
     sh:or (
-      [ sh:in (rdfs:Class owl:restriction rdfs:Property schema:Dataset schema:CreativeWork ) ]         # Case 1: type is exactly rdfs:Class
+      [ sh:in (rdfs:Class owl:restriction rdf:Property schema:Dataset schema:CreativeWork ) ]         # Case 1: type is exactly rdfs:Class
       [ sh:class rdfs:Class ]            # Case 2: type is a node of type rdfs:Class
     ) ;
     #sh:nodeKind sh:IRI ;
     sh:minCount 1 ;
-    sh:message "type should be either rdfs:Class or owl:restriction or rdfs:Property or a valid reference to a rdfs:Class or "
+    sh:message "type should be either rdfs:Class or owl:restriction or rdf:Property or a valid reference to a rdfs:Class or "
   ] .
 
 
@@ -59,13 +59,13 @@ ex:ClassDefinitionShape a sh:NodeShape ;
 #Check the shape of "owl:restriction"
 ex:OwlRestrictionDefinitionShape a sh:NodeShape;
     sh:targetClass owl:restriction ;
-    #owl:onProperty should reference a valid rdfs:Property
+    #owl:onProperty should reference a valid rdf:Property
     sh:property [
         sh:path owl:onProperty;
         sh:maxCount 1;
         sh:minCount 1;
         sh:nodeKind sh:IRI;
-        sh:class rdfs:Property ;
+        sh:class rdf:Property ;
     ] ;
     sh:property [
         sh:path owl:minCardinality ;
@@ -81,7 +81,7 @@ ex:OwlRestrictionDefinitionShape a sh:NodeShape;
     ]  .
 
 ex:PropertyDefinitionShape a sh:NodeShape ;
-    sh:targetClass rdfs:Property ;
+    sh:targetClass rdf:Property ;
     #sh:closed true;
     #sh:ignoredProperties (rdf:type) ;
     sh:property [
@@ -97,7 +97,7 @@ ex:PropertyDefinitionShape a sh:NodeShape ;
         sh:path owl:equivalentProperty ;
         sh:minCount 0 ;
         sh:nodeKind sh:IRI ;
-        #sh:class rdfs:Property ;
+        #sh:class rdf:Property ;
     ] ;
     sh:property [
         sh:path schema:domainIncludes ;

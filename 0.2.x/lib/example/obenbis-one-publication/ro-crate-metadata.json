@@ -176,7 +176,7 @@
     "@id" : "ro-crate-metadata.json",
     "@type" : "CreativeWork"
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "@id" : "openBIS:hasCOLLECTION",
     "schema:rangeIncludes" : {
       "@id" : "openBIS:Collection"
@@ -191,7 +191,7 @@
       "@id" : "PUBLICATION"
     } ]
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Identifier Scheme URI",
     "rdfs:comment" : "Identifier Scheme URI",
     "@id" : "openBIS:hasPUBLICATION_PUBLISHER.IDENTIFIER_SCHEME_URI",
@@ -205,7 +205,7 @@
       "@id" : "http://datacite.org/schema/kernel-4#schemeURI"
     }
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "URL",
     "rdfs:comment" : "URL",
     "@id" : "openBIS:hasPUBLICATION.URL",
@@ -221,7 +221,7 @@
       "@id" : "http://datacite.org/schema/kernel-4#url"
     } ]
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Name",
     "rdfs:comment" : "Name",
     "@id" : "openBIS:hasNAME",
@@ -279,7 +279,7 @@
     "owl:minCardinality" : 0,
     "owl:maxCardinality" : 1
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Affiliation Identifier Scheme URI",
     "rdfs:comment" : "Affiliation Identifier Scheme URI",
     "@id" : "openBIS:hasPUBLICATION_CREATOR.AFFILITION_IDENTIFIER_SCHEME_URI",
@@ -322,7 +322,7 @@
     "owl:minCardinality" : 0,
     "owl:maxCardinality" : 1
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Publication Status",
     "rdfs:comment" : "Publication Status",
     "@id" : "openBIS:hasPUBLICATION.STATUS",
@@ -422,7 +422,7 @@
     "@id" : "/PUBLICATIONS/PUBLIC_REPOSITORIES/PUBLICATIONS_COLLECTION",
     "@type" : "COLLECTION"
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Publisher Identifier",
     "rdfs:comment" : "Publisher Identifier",
     "@id" : "openBIS:hasPUBLICATION_PUBLISHER.IDENTIFIER",
@@ -481,7 +481,7 @@
     "@id" : "/PUBLICATIONS/PUBLIC_REPOSITORIES/PUBLICATIONS_CREATOR_COLLECTION",
     "@type" : "COLLECTION"
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Family Name",
     "rdfs:comment" : "Family Name",
     "@id" : "openBIS:hasPUBLICATION_CREATOR.FAMILY_NAME",
@@ -537,7 +537,7 @@
     "owl:minCardinality" : 0,
     "owl:maxCardinality" : 1
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Publication Year",
     "rdfs:comment" : "Publication Year",
     "@id" : "openBIS:hasPUBLICATION.PUBLICATION_YEAR",
@@ -566,7 +566,7 @@
     },
     "@type" : "PUBLICATION_CREATOR"
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Comments",
     "rdfs:comment" : "Comments log",
     "@id" : "openBIS:hasXMLCOMMENTS",
@@ -593,7 +593,7 @@
     "owl:minCardinality" : 0,
     "owl:maxCardinality" : 1
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Publication Identifier",
     "rdfs:comment" : "Publication Identifier",
     "@id" : "openBIS:hasPUBLICATION.IDENTIFIER",
@@ -617,7 +617,7 @@
     "owl:minCardinality" : 0,
     "owl:maxCardinality" : 1
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Description",
     "rdfs:comment" : "Description",
     "@id" : "openBIS:hasPUBLICATION.DESCRIPTION",
@@ -635,7 +635,7 @@
       "@id" : "https://schema.org/abstract"
     } ]
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Identifier Scheme",
     "rdfs:comment" : "Identifier",
     "@id" : "openBIS:hasPUBLICATION_CREATOR.IDENTIFIER_SCHEME",
@@ -646,7 +646,7 @@
       "@id" : "PUBLICATION_CREATOR"
     }
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Affilition",
     "rdfs:comment" : "Affiliation Identifier",
     "@id" : "openBIS:hasPUBLICATION_CREATOR.AFFILITION_IDENTIFIER",
@@ -682,7 +682,7 @@
     "owl:minCardinality" : 0,
     "owl:maxCardinality" : 1
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Creators",
     "rdfs:comment" : "Creators",
     "@id" : "openBIS:hasPUBLICATION.CREATOR",
@@ -709,7 +709,7 @@
     "@id" : ":Project",
     "@type" : "rdfs:Class"
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Affiliation Identifier Scheme",
     "rdfs:comment" : "Affiliation Identifier Scheme",
     "@id" : "openBIS:hasPUBLICATION_CREATOR.AFFILITION_IDENTIFIER_SCHEME",
@@ -720,7 +720,7 @@
       "@id" : "PUBLICATION_CREATOR"
     }
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "@id" : "openBIS:hasSPACE",
     "schema:rangeIncludes" : {
       "@id" : "openBIS:Space"
@@ -735,7 +735,7 @@
       "@id" : "PUBLICATION"
     } ]
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Type",
     "rdfs:comment" : "Type",
     "@id" : "openBIS:hasPUBLICATION.TYPE",
@@ -810,7 +810,7 @@
     "owl:minCardinality" : 1,
     "owl:maxCardinality" : 1
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Contributors",
     "rdfs:comment" : "Contributors",
     "@id" : "openBIS:hasPUBLICATION.CONTRIBUTOR",
@@ -826,7 +826,7 @@
       "@id" : "http://datacite.org/schema/kernel-4#doi"
     } ]
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Publisher",
     "rdfs:comment" : "Publisher",
     "@id" : "openBIS:hasPUBLICATION.PUBLISHER",
@@ -856,7 +856,7 @@
     "owl:minCardinality" : 0,
     "owl:maxCardinality" : 1
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Given Name",
     "rdfs:comment" : "Given Name",
     "@id" : "openBIS:hasPUBLICATION_CREATOR.GIVEN_NAME",
@@ -896,7 +896,7 @@
     },
     "@type" : "PUBLICATION"
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Identifier Scheme",
     "rdfs:comment" : "Identifier Scheme",
     "@id" : "openBIS:hasPUBLICATION_PUBLISHER.IDENTIFIER_SCHEME",
@@ -910,7 +910,7 @@
       "@id" : "http://datacite.org/schema/kernel-4#publisherIdentifierScheme"
     }
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Default collection view",
     "rdfs:comment" : "Default view for experiments of the type collection",
     "@id" : "openBIS:hasDEFAULT_COLLECTION_VIEW",
@@ -924,7 +924,7 @@
     "@id" : "PUBLICATIONS",
     "@type" : "openBIS:Space"
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "openBIS Related Identifiers",
     "rdfs:comment" : "openBIS Related Identifiers",
     "@id" : "openBIS:hasPUBLICATION.OPENBIS_RELATED_IDENTIFIERS",
@@ -956,7 +956,7 @@
       "@id" : "https://schema.org/Publisher"
     }
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Default object type",
     "rdfs:comment" : "Enter the code of the object type for which the collection is used",
     "@id" : "openBIS:hasDEFAULT_OBJECT_TYPE",
@@ -967,7 +967,7 @@
       "@id" : "COLLECTION"
     }
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Organization",
     "rdfs:comment" : "Organization",
     "@id" : "openBIS:hasPUBLICATION.ORGANIZATION",
@@ -981,7 +981,7 @@
       "@id" : "http://schema.org/Organization"
     }
   }, {
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "rdfs:label" : "Creator Identifier",
     "rdfs:comment" : "Creator Identifier",
     "@id" : "openBIS:hasPUBLICATION_CREATOR.IDENTIFIER",
