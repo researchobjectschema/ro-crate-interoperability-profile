@@ -351,19 +351,20 @@ interface ISchemaFacade
 
 # Primitive Data Types
 
-The following types from xsd are supported
+The following types from xsd and rdf are supported
 
 
-| serialized as  | in library   | Usage                         |
-|----------------|--------------|-------------------------------|
-| xsd:integer    | INTEGER      | Any length of integer         |
-| xsd:float      | FLOAT        | 32-bit floating point number  |
-| xsd:double     | DOUBLE       | 64-bit floating point number  |
-| xsd:decimal    | DECIMAL      | Arbitrary size decimal number |
-| xsd:float      | FLOAT        | 32-bit floating point number  |
-| xsd:datetime   | DATETIME     | Datetime                      |
-| xsd:string     | STRING       | String                        |
-| rdf:XMLLiteral | DATETIME     | XML                           |
+| serialized as  | in library  | Usage                         |
+|----------------|-------------|-------------------------------|
+| xsd:integer    | INTEGER     | Any length of integer         |
+| xsd:float      | FLOAT       | 32-bit floating point number  |
+| xsd:double     | DOUBLE      | 64-bit floating point number  |
+| xsd:decimal    | DECIMAL     | Arbitrary size decimal number |
+| xsd:float      | FLOAT       | 32-bit floating point number  |
+| xsd:datetime   | DATETIME    | Datetime                      |
+| xsd:string     | STRING      | String                        |
+| rdf:XMLLiteral | XML_LITERAL | XML                           |
+| xsd:anyURI     | ANY_URI     | XML                           |
 
 
 
