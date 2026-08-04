@@ -364,7 +364,7 @@ The following types from xsd and rdf are supported
 | xsd:datetime   | DATETIME    | Datetime                      |
 | xsd:string     | STRING      | String                        |
 | rdf:XMLLiteral | XML_LITERAL | XML                           |
-| xsd:anyURI     | ANY_URI     | XML                           |
+| xsd:anyURI     | ANY_URI     | Hyperlinks, URls              |
 
 
 
