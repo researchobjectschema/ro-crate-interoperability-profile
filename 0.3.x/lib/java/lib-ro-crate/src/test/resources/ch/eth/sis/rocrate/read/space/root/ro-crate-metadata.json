@@ -1,0 +1,807 @@
+{
+  "@context" : [ "https://w3id.org/ro/crate/1.1/context", {
+    "schema" : "https://schema.org/",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "openBIS" : "https://www.openbis.ch"
+  } ],
+  "@graph" : [ {
+    "name" : "name",
+    "description" : "description",
+    "@id" : "./",
+    "@type" : "Dataset",
+    "license" : {
+      "@id" : "licenseIdentifier"
+    },
+    "datePublished" : "2026-10-22T12:16Z",
+    "hasPart" : [ {
+      "@id" : "/SCICAT/PROJECT/ENTRY120"
+    }, {
+      "@id" : "openBIS:ENTRY"
+    }, {
+      "@id" : "88a86a9a-ac0e-4555-b402-92276121ef8c"
+    }, {
+      "@id" : "fba81d9c-50cf-4e46-af9f-42df5e7579bd"
+    }, {
+      "@id" : "bf551908-a88e-4d23-9b36-672ecda9d7cc"
+    }, {
+      "@id" : "hierarchy/SCICAT/PROJECT/MY_EXPERIMENT%20(PROJECT_EXP_1)/TEST_ENTRY2%20(ENTRY120)/data/test_entry2_data2.txt"
+    }, {
+      "@id" : "openBIS:hasEND_DATE"
+    }, {
+      "@id" : "openBIS:hasANNOTATIONS_STATE"
+    }, {
+      "@id" : "openBIS:hasDEFAULT_OBJECT_TYPE"
+    }, {
+      "@id" : "eb3426ec-0284-458d-ba0a-199b5bd4c409"
+    }, {
+      "@id" : "openBIS:hasCOLLECTION"
+    }, {
+      "@id" : "openBIS:hasDEFAULT_EXPERIMENT.EXPERIMENTAL_GOALS"
+    }, {
+      "@id" : "hierarchy/SCICAT/PROJECT/MY_EXPERIMENT%20(PROJECT_EXP_1)/TEST_ENTRY%20(ENTRY64)/data/test_entry_data.txt"
+    }, {
+      "@id" : "openBIS:hasPROJECT"
+    }, {
+      "@id" : "openBIS:hasTIME"
+    }, {
+      "@id" : "fa04cc73-577e-48f2-829d-6233331cd7fb"
+    }, {
+      "@id" : "37db8079-45d3-497e-b198-7e7aef8f2d41"
+    }, {
+      "@id" : "openBIS:hasNOTES"
+    }, {
+      "@id" : "aa21b6a5-0a5b-4ab4-b041-5daf8766354b"
+    }, {
+      "@id" : "openBIS:isSHOW_IN_PROJECT_OVERVIEW"
+    }, {
+      "@id" : "openBIS:hasDEFAULT_COLLECTION_VIEW"
+    }, {
+      "@id" : "openBIS:hasREFERENCE"
+    }, {
+      "@id" : "schema:hasPart"
+    }, {
+      "@id" : "21a178a3-1fd1-4062-88b1-9e0758da851c"
+    }, {
+      "@id" : "openBIS:isFINISHED_FLAG"
+    }, {
+      "@id" : "bb5d6d14-7abb-4359-a012-5226775f1e5b"
+    }, {
+      "@id" : "xlsx/miscellaneous/file-service/eln-lims/fe/28/35/fe28357e-a410-4cf9-9c43-fc5bb7d7d40e/56a6425a-2f59-47b5-bacb-e1b03828c5a5.png"
+    }, {
+      "@id" : "openBIS:Object"
+    }, {
+      "@id" : "openBIS:hasSPACE"
+    }, {
+      "@id" : "/SCICAT/PROJECT/ENTRY64"
+    }, {
+      "@id" : "xlsx/miscellaneous/file-service/eln-lims/97/f6/ec/97f6ec9b-e0ff-4ca0-8e3d-0739c14f3140/5e90a9f1-6968-4b49-8b06-4204fb90748f.png"
+    }, {
+      "@id" : "a6bc7f35-30b1-4daa-b453-634d9722f491"
+    }, {
+      "@id" : "bb8d7f5f-67e0-449b-a30f-d84a1b663dd4"
+    }, {
+      "@id" : "openBIS:Collection"
+    }, {
+      "@id" : "c0a76aa4-39dc-425e-92c1-59c3c88d7f0b"
+    }, {
+      "@id" : "a6f32c49-8e5a-4198-b996-7e7843b79403"
+    }, {
+      "@id" : "/SCICAT/PROJECT"
+    }, {
+      "@id" : "1e12f243-4dcf-4c42-85e3-b8471f5cb7d4"
+    }, {
+      "@id" : "openBIS:hasDEFAULT_EXPERIMENT.EXPERIMENTAL_RESULTS"
+    }, {
+      "@id" : "openBIS:Dataset"
+    }, {
+      "@id" : "a6be2e29-e1b4-4d28-8d86-a9365b1be050"
+    }, {
+      "@id" : "19d327f0-a8b5-4186-9f4d-3d287e16341a"
+    }, {
+      "@id" : "openBIS:hasNAME"
+    }, {
+      "@id" : "openBIS:hasSAMPLE"
+    }, {
+      "@id" : "cfdd9c38-cea0-4de0-b1e5-44c2f68d85fd"
+    }, {
+      "@id" : "openBIS:Space"
+    }, {
+      "@id" : "/SCICAT/PROJECT/PROJECT_EXP_1"
+    }, {
+      "@id" : "1043b4bc-ed12-4ff6-899d-f57692cd9433"
+    }, {
+      "@id" : "SCICAT"
+    }, {
+      "@id" : "openBIS:hasPUBLICATION"
+    }, {
+      "@id" : "8bc014ad-3c9e-4076-a54a-88b7566b8f36"
+    }, {
+      "@id" : "openBIS:DEFAULT_EXPERIMENT"
+    }, {
+      "@id" : "openBIS:hasDEFAULT_EXPERIMENT.EXPERIMENTAL_DESCRIPTION"
+    }, {
+      "@id" : "0a87963a-3d2d-48cb-9c20-ae080b76645f"
+    }, {
+      "@id" : "openBIS:hasDOCUMENT"
+    }, {
+      "@id" : "openBIS:parents"
+    }, {
+      "@id" : "xlsx/miscellaneous/file-service/eln-lims/dc/fc/74/dcfc74f2-59fa-4a7d-a062-2751b854787a/25e2ea54-cd6c-423c-9321-3ed5e65f62d2.png"
+    }, {
+      "@id" : "2f9dc307-ab38-40fe-bc7e-06be19976e12"
+    }, {
+      "@id" : "bfd96711-b1bf-433a-a1b2-031d01c42b0c"
+    }, {
+      "@id" : "openBIS:Project"
+    }, {
+      "@id" : "openBIS:hasINT"
+    }, {
+      "@id" : "openBIS:hasSTART_DATE"
+    }, {
+      "@id" : "openBIS:hasDEFAULT_EXPERIMENT.GRANT"
+    }, {
+      "@id" : "openBIS:hasXMLCOMMENTS"
+    }, {
+      "@id" : "hierarchy/SCICAT/PROJECT/MY_EXPERIMENT%20(PROJECT_EXP_1)/TEST_ENTRY2%20(ENTRY120)/data/test_entry2_data1.txt"
+    }, {
+      "@id" : "openBIS:Vocabulary"
+    } ]
+  }, {
+    "about" : {
+      "@id" : "./"
+    },
+    "conformsTo" : {
+      "@id" : "https://w3id.org/ro/crate/1.1"
+    },
+    "@id" : "ro-crate-metadata.json",
+    "@type" : "CreativeWork"
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "Annotations State",
+    "rdfs:comment" : "Annotations State",
+    "@id" : "openBIS:hasANNOTATIONS_STATE",
+    "schema:rangeIncludes" : {
+      "@id" : "xsd:string"
+    },
+    "schema:domainIncludes" : {
+      "@id" : "openBIS:ENTRY"
+    }
+  }, {
+    "@id" : "a6bc7f35-30b1-4daa-b453-634d9722f491",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:hasDEFAULT_OBJECT_TYPE"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@id" : "aa21b6a5-0a5b-4ab4-b041-5daf8766354b",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:hasREFERENCE"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@id" : "bb5d6d14-7abb-4359-a012-5226775f1e5b",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:isFINISHED_FLAG"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@id" : "xlsx/miscellaneous/file-service/eln-lims/97/f6/ec/97f6ec9b-e0ff-4ca0-8e3d-0739c14f3140/5e90a9f1-6968-4b49-8b06-4204fb90748f.png",
+    "@type" : "File"
+  }, {
+    "openBIS:hasDOCUMENT" : "<html>\n <head></head>\n <body>\n  <h2>TEST_ENTRY2</h2>\n  <p>new content</p>\n  <figure class=\"image\">\n   <img style=\"aspect-ratio:228/60;\" src=\"xlsx/miscellaneous/file-service/eln-lims/97/f6/ec/97f6ec9b-e0ff-4ca0-8e3d-0739c14f3140/5e90a9f1-6968-4b49-8b06-4204fb90748f.png\" width=\"228\" height=\"60\">\n  </figure>\n </body>\n</html>",
+    "openBIS:hasNAME" : "TEST_ENTRY2",
+    "@id" : "/SCICAT/PROJECT/ENTRY120",
+    "openBIS:hasSPACE" : {
+      "@id" : "SCICAT"
+    },
+    "openBIS:hasPROJECT" : {
+      "@id" : "/SCICAT/PROJECT"
+    },
+    "openBIS:hasCOLLECTION" : {
+      "@id" : "/SCICAT/PROJECT/PROJECT_EXP_1"
+    },
+    "schema:hasPart" : [ {
+      "@id" : "hierarchy/SCICAT/PROJECT/MY_EXPERIMENT%20(PROJECT_EXP_1)/TEST_ENTRY2%20(ENTRY120)/data/test_entry2_data2.txt"
+    }, {
+      "@id" : "hierarchy/SCICAT/PROJECT/MY_EXPERIMENT%20(PROJECT_EXP_1)/TEST_ENTRY2%20(ENTRY120)/data/test_entry2_data1.txt"
+    }, {
+      "@id" : "xlsx/miscellaneous/file-service/eln-lims/97/f6/ec/97f6ec9b-e0ff-4ca0-8e3d-0739c14f3140/5e90a9f1-6968-4b49-8b06-4204fb90748f.png"
+    } ],
+    "@type" : "openBIS:ENTRY"
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "Comments",
+    "rdfs:comment" : "Comments log",
+    "@id" : "openBIS:hasXMLCOMMENTS",
+    "schema:rangeIncludes" : {
+      "@id" : "xsd:string"
+    },
+    "schema:domainIncludes" : {
+      "@id" : "openBIS:DEFAULT_EXPERIMENT"
+    }
+  }, {
+    "@id" : "/SCICAT/PROJECT",
+    "@type" : "openBIS:Project"
+  }, {
+    "@id" : "8bc014ad-3c9e-4076-a54a-88b7566b8f36",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:hasSTART_DATE"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@id" : "hierarchy/SCICAT/PROJECT/MY_EXPERIMENT%20(PROJECT_EXP_1)/TEST_ENTRY2%20(ENTRY120)/data/test_entry2_data2.txt",
+    "@type" : "File"
+  }, {
+    "@id" : "1e12f243-4dcf-4c42-85e3-b8471f5cb7d4",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:hasDEFAULT_COLLECTION_VIEW"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@id" : "openBIS:Vocabulary",
+    "@type" : "rdfs:Class"
+  }, {
+    "@id" : "SCICAT",
+    "@type" : "openBIS:Space"
+  }, {
+    "@id" : "openBIS:DEFAULT_EXPERIMENT",
+    "@type" : "rdfs:Class",
+    "owl:restriction" : [ {
+      "@id" : "bb8d7f5f-67e0-449b-a30f-d84a1b663dd4"
+    }, {
+      "@id" : "0a87963a-3d2d-48cb-9c20-ae080b76645f"
+    }, {
+      "@id" : "1e12f243-4dcf-4c42-85e3-b8471f5cb7d4"
+    }, {
+      "@id" : "aa21b6a5-0a5b-4ab4-b041-5daf8766354b"
+    }, {
+      "@id" : "bb5d6d14-7abb-4359-a012-5226775f1e5b"
+    }, {
+      "@id" : "21a178a3-1fd1-4062-88b1-9e0758da851c"
+    }, {
+      "@id" : "cfdd9c38-cea0-4de0-b1e5-44c2f68d85fd"
+    }, {
+      "@id" : "88a86a9a-ac0e-4555-b402-92276121ef8c"
+    }, {
+      "@id" : "a6bc7f35-30b1-4daa-b453-634d9722f491"
+    }, {
+      "@id" : "a6f32c49-8e5a-4198-b996-7e7843b79403"
+    }, {
+      "@id" : "eb3426ec-0284-458d-ba0a-199b5bd4c409"
+    }, {
+      "@id" : "8bc014ad-3c9e-4076-a54a-88b7566b8f36"
+    }, {
+      "@id" : "fa04cc73-577e-48f2-829d-6233331cd7fb"
+    }, {
+      "@id" : "a6be2e29-e1b4-4d28-8d86-a9365b1be050"
+    }, {
+      "@id" : "1043b4bc-ed12-4ff6-899d-f57692cd9433"
+    } ],
+    "rdfs:subClassOf" : {
+      "@id" : "openBIS:Collection"
+    }
+  }, {
+    "@id" : "openBIS:ENTRY",
+    "@type" : "rdfs:Class",
+    "owl:restriction" : [ {
+      "@id" : "bfd96711-b1bf-433a-a1b2-031d01c42b0c"
+    }, {
+      "@id" : "bf551908-a88e-4d23-9b36-672ecda9d7cc"
+    }, {
+      "@id" : "37db8079-45d3-497e-b198-7e7aef8f2d41"
+    }, {
+      "@id" : "fba81d9c-50cf-4e46-af9f-42df5e7579bd"
+    }, {
+      "@id" : "c0a76aa4-39dc-425e-92c1-59c3c88d7f0b"
+    }, {
+      "@id" : "2f9dc307-ab38-40fe-bc7e-06be19976e12"
+    }, {
+      "@id" : "19d327f0-a8b5-4186-9f4d-3d287e16341a"
+    } ],
+    "rdfs:subClassOf" : {
+      "@id" : "openBIS:Object"
+    },
+    "owl:equivalentClass" : [ {
+      "@id" : "https://schema.org/Thing"
+    }, {
+      "@id" : "http://www.w3.org/ns/prov#Entity"
+    }, {
+      "@id" : "http://purl.obolibrary.org/obo/bfo.owl_0000031"
+    }, {
+      "@id" : "http://purl.obolibrary.org/obo/bfo.owl_0000031"
+    }, {
+      "@id" : "http://www.w3.org/ns/prov#Entity"
+    }, {
+      "@id" : "https://schema.org/Thing"
+    } ]
+  }, {
+    "@id" : "xlsx/miscellaneous/file-service/eln-lims/dc/fc/74/dcfc74f2-59fa-4a7d-a062-2751b854787a/25e2ea54-cd6c-423c-9321-3ed5e65f62d2.png",
+    "@type" : "File"
+  }, {
+    "@id" : "cfdd9c38-cea0-4de0-b1e5-44c2f68d85fd",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:hasDEFAULT_EXPERIMENT.EXPERIMENTAL_DESCRIPTION"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "Default object type",
+    "rdfs:comment" : "Enter the code of the object type for which the collection is used",
+    "@id" : "openBIS:hasDEFAULT_OBJECT_TYPE",
+    "schema:rangeIncludes" : {
+      "@id" : "xsd:string"
+    },
+    "schema:domainIncludes" : {
+      "@id" : "openBIS:DEFAULT_EXPERIMENT"
+    }
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "Grant",
+    "rdfs:comment" : "Grant",
+    "@id" : "openBIS:hasDEFAULT_EXPERIMENT.GRANT",
+    "schema:rangeIncludes" : {
+      "@id" : "xsd:string"
+    },
+    "schema:domainIncludes" : {
+      "@id" : "openBIS:DEFAULT_EXPERIMENT"
+    }
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "End date",
+    "rdfs:comment" : "End date: End date: End date",
+    "@id" : "openBIS:hasEND_DATE",
+    "schema:rangeIncludes" : {
+      "@id" : "xsd:dateTime"
+    },
+    "schema:domainIncludes" : {
+      "@id" : "openBIS:DEFAULT_EXPERIMENT"
+    }
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "Experiment completed",
+    "rdfs:comment" : "Marks the experiment as finished",
+    "@id" : "openBIS:isFINISHED_FLAG",
+    "schema:rangeIncludes" : {
+      "@id" : "xsd:boolean"
+    },
+    "schema:domainIncludes" : {
+      "@id" : "openBIS:DEFAULT_EXPERIMENT"
+    }
+  }, {
+    "@id" : "openBIS:Project",
+    "@type" : "rdfs:Class"
+  }, {
+    "@id" : "hierarchy/SCICAT/PROJECT/MY_EXPERIMENT%20(PROJECT_EXP_1)/TEST_ENTRY%20(ENTRY64)/data/test_entry_data.txt",
+    "@type" : "File"
+  }, {
+    "@type" : "rdf:Property",
+    "@id" : "openBIS:hasPROJECT",
+    "schema:rangeIncludes" : {
+      "@id" : "openBIS:Project"
+    },
+    "schema:domainIncludes" : [ {
+      "@id" : "openBIS:DEFAULT_EXPERIMENT"
+    }, {
+      "@id" : "openBIS:ENTRY"
+    } ]
+  }, {
+    "@id" : "0a87963a-3d2d-48cb-9c20-ae080b76645f",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:hasDEFAULT_EXPERIMENT.EXPERIMENTAL_RESULTS"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "openBIS:hasDOCUMENT" : "<html>\n <head></head>\n <body>\n  <h2>TEST_ENTRY</h2>\n  <p>new content</p>\n  <figure class=\"image\">\n   <img style=\"aspect-ratio:109/45;\" src=\"xlsx/miscellaneous/file-service/eln-lims/dc/fc/74/dcfc74f2-59fa-4a7d-a062-2751b854787a/25e2ea54-cd6c-423c-9321-3ed5e65f62d2.png\" width=\"109\" height=\"45\">\n  </figure>\n  <figure class=\"image\">\n   <img style=\"aspect-ratio:210/59;\" src=\"xlsx/miscellaneous/file-service/eln-lims/fe/28/35/fe28357e-a410-4cf9-9c43-fc5bb7d7d40e/56a6425a-2f59-47b5-bacb-e1b03828c5a5.png\" width=\"210\" height=\"59\">\n  </figure>\n </body>\n</html>",
+    "openBIS:hasNAME" : "TEST_ENTRY",
+    "@id" : "/SCICAT/PROJECT/ENTRY64",
+    "openBIS:hasSPACE" : {
+      "@id" : "SCICAT"
+    },
+    "openBIS:hasPROJECT" : {
+      "@id" : "/SCICAT/PROJECT"
+    },
+    "openBIS:hasCOLLECTION" : {
+      "@id" : "/SCICAT/PROJECT/PROJECT_EXP_1"
+    },
+    "schema:hasPart" : [ {
+      "@id" : "hierarchy/SCICAT/PROJECT/MY_EXPERIMENT%20(PROJECT_EXP_1)/TEST_ENTRY%20(ENTRY64)/data/test_entry_data.txt"
+    }, {
+      "@id" : "xlsx/miscellaneous/file-service/eln-lims/dc/fc/74/dcfc74f2-59fa-4a7d-a062-2751b854787a/25e2ea54-cd6c-423c-9321-3ed5e65f62d2.png"
+    }, {
+      "@id" : "xlsx/miscellaneous/file-service/eln-lims/fe/28/35/fe28357e-a410-4cf9-9c43-fc5bb7d7d40e/56a6425a-2f59-47b5-bacb-e1b03828c5a5.png"
+    } ],
+    "@type" : "openBIS:ENTRY"
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "INT",
+    "rdfs:comment" : "INT: INT",
+    "@id" : "openBIS:hasINT",
+    "schema:rangeIncludes" : {
+      "@id" : "xsd:integer"
+    },
+    "schema:domainIncludes" : {
+      "@id" : "openBIS:ENTRY"
+    }
+  }, {
+    "@id" : "a6f32c49-8e5a-4198-b996-7e7843b79403",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:hasDEFAULT_EXPERIMENT.EXPERIMENTAL_GOALS"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@id" : "openBIS:Collection",
+    "@type" : "rdfs:Class"
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "Show in project overview",
+    "rdfs:comment" : "Show in project overview page",
+    "@id" : "openBIS:isSHOW_IN_PROJECT_OVERVIEW",
+    "schema:rangeIncludes" : {
+      "@id" : "xsd:boolean"
+    },
+    "schema:domainIncludes" : [ {
+      "@id" : "openBIS:DEFAULT_EXPERIMENT"
+    }, {
+      "@id" : "openBIS:ENTRY"
+    } ]
+  }, {
+    "@id" : "openBIS:Object",
+    "@type" : "rdfs:Class"
+  }, {
+    "@id" : "a6be2e29-e1b4-4d28-8d86-a9365b1be050",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:hasNOTES"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@id" : "1043b4bc-ed12-4ff6-899d-f57692cd9433",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:hasXMLCOMMENTS"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@id" : "c0a76aa4-39dc-425e-92c1-59c3c88d7f0b",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:hasTIME"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@type" : "rdf:Property",
+    "@id" : "openBIS:hasSPACE",
+    "schema:rangeIncludes" : {
+      "@id" : "openBIS:Space"
+    },
+    "schema:domainIncludes" : [ {
+      "@id" : "openBIS:DEFAULT_EXPERIMENT"
+    }, {
+      "@id" : "openBIS:ENTRY"
+    } ]
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "schema:publication",
+    "rdfs:comment" : "schema:publication: publication",
+    "@id" : "openBIS:hasPUBLICATION",
+    "schema:rangeIncludes" : {
+      "@id" : "xsd:string"
+    },
+    "schema:domainIncludes" : {
+      "@id" : "openBIS:DEFAULT_EXPERIMENT"
+    }
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "TIME",
+    "rdfs:comment" : "TIME: TIME",
+    "@id" : "openBIS:hasTIME",
+    "schema:rangeIncludes" : {
+      "@id" : "xsd:dateTime"
+    },
+    "schema:domainIncludes" : {
+      "@id" : "openBIS:ENTRY"
+    }
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "Default collection view",
+    "rdfs:comment" : "Default view for experiments of the type collection",
+    "@id" : "openBIS:hasDEFAULT_COLLECTION_VIEW",
+    "schema:rangeIncludes" : {
+      "@id" : "openBIS:termDEFAULT_COLLECTION_VIEWS"
+    },
+    "schema:domainIncludes" : {
+      "@id" : "openBIS:DEFAULT_EXPERIMENT"
+    }
+  }, {
+    "@id" : "xlsx/miscellaneous/file-service/eln-lims/fe/28/35/fe28357e-a410-4cf9-9c43-fc5bb7d7d40e/56a6425a-2f59-47b5-bacb-e1b03828c5a5.png",
+    "@type" : "File"
+  }, {
+    "@id" : "openBIS:Space",
+    "@type" : "rdfs:Class"
+  }, {
+    "@id" : "openBIS:Dataset",
+    "@type" : "rdfs:Class"
+  }, {
+    "@id" : "fa04cc73-577e-48f2-829d-6233331cd7fb",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:hasDEFAULT_EXPERIMENT.GRANT"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@id" : "21a178a3-1fd1-4062-88b1-9e0758da851c",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:hasPUBLICATION"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "Notes",
+    "rdfs:comment" : "Notes: Notes",
+    "@id" : "openBIS:hasNOTES",
+    "schema:rangeIncludes" : {
+      "@id" : "xsd:string"
+    },
+    "schema:domainIncludes" : {
+      "@id" : "openBIS:DEFAULT_EXPERIMENT"
+    }
+  }, {
+    "@type" : "rdf:Property",
+    "@id" : "schema:hasPart",
+    "schema:rangeIncludes" : {
+      "@id" : "File"
+    },
+    "schema:domainIncludes" : [ {
+      "@id" : "openBIS:Object"
+    }, {
+      "@id" : "openBIS:Collection"
+    } ]
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "Goals",
+    "rdfs:comment" : "Goals of the experiment",
+    "@id" : "openBIS:hasDEFAULT_EXPERIMENT.EXPERIMENTAL_GOALS",
+    "schema:rangeIncludes" : {
+      "@id" : "xsd:string"
+    },
+    "schema:domainIncludes" : {
+      "@id" : "openBIS:DEFAULT_EXPERIMENT"
+    }
+  }, {
+    "openBIS:hasDEFAULT_EXPERIMENT.EXPERIMENTAL_DESCRIPTION" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<html><head></head><body><figure class=\"image\"><img style=\"aspect-ratio:283/54;\" src=\"/openbis/openbis/file-service/eln-lims/3e/73/f6/3e73f6ab-99f7-46f5-be0d-8d8480e4d383/c66d5cd8-4c3d-4bef-b85c-9b7f6f7b23ea.png\" width=\"283\" height=\"54\" /></figure></body></html>",
+    "openBIS:hasNAME" : "MY_EXPERIMENT",
+    "@id" : "/SCICAT/PROJECT/PROJECT_EXP_1",
+    "@type" : "openBIS:DEFAULT_EXPERIMENT"
+  }, {
+    "@id" : "bfd96711-b1bf-433a-a1b2-031d01c42b0c",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:isSHOW_IN_PROJECT_OVERVIEW"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@id" : "37db8079-45d3-497e-b198-7e7aef8f2d41",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:hasANNOTATIONS_STATE"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "Name",
+    "rdfs:comment" : "Name",
+    "@id" : "openBIS:hasNAME",
+    "schema:rangeIncludes" : {
+      "@id" : "xsd:string"
+    },
+    "schema:domainIncludes" : [ {
+      "@id" : "openBIS:DEFAULT_EXPERIMENT"
+    }, {
+      "@id" : "openBIS:ENTRY"
+    } ],
+    "owl:equivalentProperty" : {
+      "@id" : "https://schema.org/name"
+    }
+  }, {
+    "@id" : "88a86a9a-ac0e-4555-b402-92276121ef8c",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:hasEND_DATE"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@id" : "19d327f0-a8b5-4186-9f4d-3d287e16341a",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:hasSAMPLE"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "Document",
+    "rdfs:comment" : "Document",
+    "@id" : "openBIS:hasDOCUMENT",
+    "schema:rangeIncludes" : {
+      "@id" : "xsd:string"
+    },
+    "schema:domainIncludes" : {
+      "@id" : "openBIS:ENTRY"
+    },
+    "owl:equivalentProperty" : [ {
+      "@id" : "https://schema.org/text"
+    }, {
+      "@id" : "https://schema.org/text"
+    } ]
+  }, {
+    "@type" : "rdf:Property",
+    "@id" : "openBIS:parents",
+    "schema:rangeIncludes" : {
+      "@id" : "openBIS:Object"
+    },
+    "schema:domainIncludes" : {
+      "@id" : "openBIS:Object"
+    },
+    "owl:equivalentProperty" : {
+      "@id" : "https://schema.org/isBasedOn"
+    }
+  }, {
+    "@id" : "hierarchy/SCICAT/PROJECT/MY_EXPERIMENT%20(PROJECT_EXP_1)/TEST_ENTRY2%20(ENTRY120)/data/test_entry2_data1.txt",
+    "@type" : "File"
+  }, {
+    "@type" : "rdf:Property",
+    "@id" : "openBIS:hasCOLLECTION",
+    "schema:rangeIncludes" : {
+      "@id" : "openBIS:Collection"
+    },
+    "schema:domainIncludes" : [ {
+      "@id" : "openBIS:DEFAULT_EXPERIMENT"
+    }, {
+      "@id" : "openBIS:ENTRY"
+    } ]
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "SAMPLE",
+    "rdfs:comment" : "SAMPLE: SAMPLE",
+    "@id" : "openBIS:hasSAMPLE",
+    "schema:rangeIncludes" : {
+      "@id" : "openBIS:Object"
+    },
+    "schema:domainIncludes" : {
+      "@id" : "openBIS:ENTRY"
+    }
+  }, {
+    "@id" : "eb3426ec-0284-458d-ba0a-199b5bd4c409",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:hasNAME"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "Start date",
+    "rdfs:comment" : "Start date: Start date: Start date",
+    "@id" : "openBIS:hasSTART_DATE",
+    "schema:rangeIncludes" : {
+      "@id" : "xsd:dateTime"
+    },
+    "schema:domainIncludes" : {
+      "@id" : "openBIS:DEFAULT_EXPERIMENT"
+    }
+  }, {
+    "@id" : "bf551908-a88e-4d23-9b36-672ecda9d7cc",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:hasDOCUMENT"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@id" : "fba81d9c-50cf-4e46-af9f-42df5e7579bd",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:hasINT"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "References",
+    "rdfs:comment" : "Useful refences",
+    "@id" : "openBIS:hasREFERENCE",
+    "schema:rangeIncludes" : {
+      "@id" : "xsd:string"
+    },
+    "schema:domainIncludes" : {
+      "@id" : "openBIS:DEFAULT_EXPERIMENT"
+    }
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "Description",
+    "rdfs:comment" : "Description of the experiment",
+    "@id" : "openBIS:hasDEFAULT_EXPERIMENT.EXPERIMENTAL_DESCRIPTION",
+    "schema:rangeIncludes" : {
+      "@id" : "xsd:string"
+    },
+    "schema:domainIncludes" : {
+      "@id" : "openBIS:DEFAULT_EXPERIMENT"
+    }
+  }, {
+    "@type" : "rdf:Property",
+    "rdfs:label" : "Results",
+    "rdfs:comment" : "Summary of  experimental results",
+    "@id" : "openBIS:hasDEFAULT_EXPERIMENT.EXPERIMENTAL_RESULTS",
+    "schema:rangeIncludes" : {
+      "@id" : "xsd:string"
+    },
+    "schema:domainIncludes" : {
+      "@id" : "openBIS:DEFAULT_EXPERIMENT"
+    }
+  }, {
+    "@id" : "2f9dc307-ab38-40fe-bc7e-06be19976e12",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:hasNAME"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "@id" : "bb8d7f5f-67e0-449b-a30f-d84a1b663dd4",
+    "@type" : "owl:Restriction",
+    "owl:onProperty" : {
+      "@id" : "openBIS:isSHOW_IN_PROJECT_OVERVIEW"
+    },
+    "owl:minCardinality" : 0,
+    "owl:maxCardinality" : 1
+  }, {
+    "rdfs:label" : "Form view",
+    "@id" : "openBIS:termDEFAULT_COLLECTION_VIEWSFORM_VIEW",
+    "@type" : "owl:namedIndividual"
+  }, {
+    "rdfs:comment" : "Default collection views",
+    "owl:oneOf" : [ {
+      "@id" : "openBIS:termDEFAULT_COLLECTION_VIEWSFORM_VIEW"
+    }, {
+      "@id" : "openBIS:termDEFAULT_COLLECTION_VIEWSIMAGING_GALLERY_VIEW"
+    }, {
+      "@id" : "openBIS:termDEFAULT_COLLECTION_VIEWSLIST_VIEW"
+    } ],
+    "@id" : "openBIS:termDEFAULT_COLLECTION_VIEWS",
+    "@type" : "owl:Class"
+  }, {
+    "rdfs:label" : "List view",
+    "@id" : "openBIS:termDEFAULT_COLLECTION_VIEWSLIST_VIEW",
+    "@type" : "owl:namedIndividual"
+  }, {
+    "rdfs:label" : "Imaging Gallery View",
+    "rdfs:comment" : "Imaging gallery viewer for collections",
+    "@id" : "openBIS:termDEFAULT_COLLECTION_VIEWSIMAGING_GALLERY_VIEW",
+    "@type" : "owl:namedIndividual"
+  } ]
+}
