@@ -1,0 +1,52 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+
+tasks.register('buildDistribution', Jar) {
+    zip64 = true
+    dependsOn tasks.build
+    duplicatesStrategy 'include'
+
+    archiveBaseName.set('lib-ro-crate-distribution')
+    includeEmptyDirs = false
+
+
+    from(zipTree(tasks.jar.outputs.files.singleFile)) {
+        include '**/*'
+    }
+
+    from(configurations.runtimeClasspath.collect { zipTree(it) }) {
+        include '**/*'
+        exclude 'META-INF/*.SF', 'META-INF/*.DSA', 'META-INF/*.RSA'
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs << '-parameters'
+}
+
+apply from: '../build/repository.gradle'
+repositories repositoryConfig
+
+apply from: '../build/common-resolutions.gradle'
+
+dependencies {
+                    // Ro-crate library
+    implementation libs.edu.kit.datamanager.ro.crate.java,
+                    libs.com.fasterxml.jackson.core.jackson.core,
+                    libs.com.fasterxml.jackson.core.jackson.databind,
+                    libs.com.networknt.json.schema.validator,
+                    libs.net.lingala.zip4j.zip4j,
+            libs.org.apache.httpcomponents.httpclient,
+            // Apache Jena
+            libs.bundles.org.apache.jena.jena
+
+    testImplementation libs.org.junit.junit
+}
